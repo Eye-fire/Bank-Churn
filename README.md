@@ -5,4 +5,7 @@ This assignment by Mr. Kega is built on providing practical knowledge about the 
 The study will provide the opportunity to explore open-source datasets including bank churn and salaries datasets, and many others. Using these real-life datasets, to understand the data, summarize their characteristics, and visualize them for business intelligence. 
 We will be using Pandas, a powerful library for working with data, and other core Python libraries including NumPy and SciPy, StatsModels for regression, and Matplotlib for visualization.
 
+# Data Classification on Bank Churn database
+The following Steps were taken to achieve classification;
+
 

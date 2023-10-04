@@ -51,7 +51,7 @@ Classifying other variables from the dataset to get further insight into the dat
 # Statement of the problem
 We are using the regression technique to predict future output for independent variables in the dataset
 
-# Intorduction
+# Introduction
 Linear regression is a statistical method for modeling relationships between a dependent variable with a given set of independent variables.
 Simple linear regression is an approach for predicting a response using a single feature. In linear regression, we assume that the two variables i.e. dependent and independent variables are linearly related. Hence, we try to find a linear function that predicts the response value(y) as accurately as possible as a function of the feature or independent variable(x). Let us consider a dataset where we have a value of response y for every feature x: 
 

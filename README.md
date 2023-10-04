@@ -9,7 +9,21 @@ We will be using Pandas, a powerful library for working with data, and other cor
 We are using a database called Bank Churn to perform classification problems in order to highlight useful insights about the data and make informed decision
 
 # Importance of solving the problem
-Solving the problem enables us to create insights that lead to the development of learning models that can be used to learn and make predictions that are useful in the decision-making process.
+Solving the problem enables us to create insights that lead to the development of learning models to determine the following parameters that cause customers to leave or stay
+
+* RowNumber—corresponds to the record (row) number and has no effect on the output. contains random values and has no effect on customers leaving the bank.
+* Surname—the surname of a customer has no impact on their decision to leave the bank.
+* CreditScore—can have an effect on customer churn, since a customer with a higher credit score is less likely to leave the bank.
+* Geography—a customer’s location can affect their decision to leave the bank.
+* Gender—it’s interesting to explore whether gender plays a role in a customer leaving the bank
+* Age—this is certainly relevant since older customers are less likely to leave their bank than younger ones.
+* Tenure—refers to the number of years that the customer has been a client of the bank. Normally, older clients are more loyal and less likely to leave a bank
+* Balance—also a very good indicator of customer churn, as people with a higher balance in their accounts are less likely to leave the bank compared to those with lower balances.
+* NumOfProducts—refers to the number of products that a customer has purchased through the bank.
+* HasCrCard—denotes whether or not a customer has a credit card. This column is also relevant since people with credit cards are less likely to leave the bank.
+* IsActiveMember—active customers are less likely to leave the bank
+* EstimatedSalary—as with balance, people with lower salaries are more likely to leave the bank compared to those with higher salaries.
+* Exited—whether or not the customer left the bank.
 
 # Data preparation
 Load the dataset into the code
@@ -21,30 +35,8 @@ Display a summary of the dataset to familiarize yourself with the data
 View the database structure to get the datatypes, number of entries, and null values
 * db.info()
 
-Convert data into a format that easily be used to perform comparisons and plotting 
-* def label_encoder(db_: pd.DataFrame(), columns_name_: list):
-    le = LabelEncoder()
-    for i in columns_name_:
-        le.fit(db_[i])
-        db_[i] = le.transform(db_[i])
-    return db_
-
-* db = label_encoder(db, ['Geography', 'Gender'])
-* db
-
 # Exploratory Data analysis
-The following are the different techniques used to explore the data
-
-Plotting the credit score and balance to get an insight into the two variables
-* mpl.scatter(db.CreditScore, db.Balance)
-* mpl.title('Credit Score vs Balance')
-* mpl.xlabel('CreditScore')
-* mpl.ylabel('Balance')
-
-Getting a summary of the population from different geographical regions
-* db['Geography'].value_counts()
-
-Classifying other variables from the dataset to get further insight into the dataset.
+We create several graphical presentations that try to bring out the insights that might cause customers to leave or stay in the bank
 
 # Regression tests on Profesional Salaries Churn Dataset
 

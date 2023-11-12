@@ -26,22 +26,28 @@ Solving the problem enables us to create insights that lead to the development o
 * Exited—whether or not the customer left the bank.
 
 # Data preparation
-Load the dataset into the code
-* db = pd.read_csv("C://Users/wawes/OneDrive/Desktop/ZETECH UNIVERSITY/Y4S2/MACHINE LEARNING/Topic 2/churn.csv")
-
-Display a summary of the dataset to familiarize yourself with the data
-* db
-
-View the database structure to get the datatypes, number of entries, and null values
-* db.info()
+The dataset is prepared by removing fields that will not be helpful in the machine-learning process
+outliers are checked
+null values are checked
+the structure of the dataset and correlation are analyzed
 
 # Exploratory Data analysis
 We create several graphical presentations that try to bring out the insights that might cause customers to leave or stay in the bank
+
+
+
+
+
+
 
 # Regression tests on Profesional Salaries Churn Dataset
 
 # Statement of the problem
 We are using the regression technique to predict future output for independent variables in the dataset
+Analytics is the systematic computational analysis of data or statistics. It is used for the discovery, interpretation, and communication of meaningful patterns in data. It also entails applying data patterns towards effective decision-making. It can be valuable in areas rich with recorded information; analytics relies on the simultaneous application of statistics, computer programming, and operations research to quantify performance. Organizations may apply analytics to business data to describe, predict, and improve business performance. Specifically, areas within analytics include predictive analytics, prescriptive analytics, enterprise decision management, descriptive analytics, cognitive analytics, Big Data Analytics, retail analytics, supply chain analytics, store assortment and stock-keeping unit optimization, marketing optimization and marketing mix modeling, web analytics, call analytics, speech analytics, sales force sizing and optimization, price and promotion modeling, predictive science, graph analytics, credit risk analysis, and fraud analytics. Since analytics can require extensive computation (see big data), the algorithms and software used for analytics harness the most current methods in computer science, statistics, and mathematics.
+This Dataset consists of salaries for Data Scientists, Machine Learning Engineers, Data Analysts, and Data Engineers in various cities across India (2022). 
+
+Here our main objective is to gain insights about the Salaries in Analytics domains.
 
 # Introduction
 Linear regression is a statistical method for modeling relationships between a dependent variable with a given set of independent variables.
